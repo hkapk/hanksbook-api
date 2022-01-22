@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/hanksbook
   useUnifiedTopology: true
 });
 
-// Use this to log mongo queries being executed!
+//  this will log mongo queries being executed
 mongoose.set('debug', true);
 
 app.use(require('./routes'));

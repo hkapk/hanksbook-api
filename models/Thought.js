@@ -37,7 +37,9 @@ const ThoughtSchema = new Schema (
         thoughtText: {
             type: String,
             required: true,
-            //must be 1-280 characters 
+            //must be 1-280 characters
+            minlength: 1,
+            maxlength: 280  
         },
         createdAt: {
             type: Date,
@@ -48,6 +50,11 @@ const ThoughtSchema = new Schema (
         username: {
             type: String,
             required: true
+          },
+
+          userId: {
+            
+
           },
 
           //use the reactions schema
