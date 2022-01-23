@@ -1,1 +1,98 @@
-# hanksbook-api
+# hanksbook-api ( A Social Network API)
+
+![License](https://img.shields.io/badge/License-MIT-blue.svg "License Badge")
+
+## Description
+
+This is an API for a social network that uses a noSQL database, MongoDB. There are various API endpoints set up and they are displayed in the readme below and also in the how to video. There are endpoints at api/users and api/thoughts.
+
+### Table of Contents
+
+- [Description](#description)
+- [How-To](#howto)
+- [Installation](#installation)
+- [End-points](#endpoints)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## How-To
+
+## Installation
+
+You will need to install MongoDB, ExpressJS, and Mongoose to use this API locally.
+After installing MongoDB, follow these steps to use this API locally:
+
+1. clone this repository to your local branch.
+2. navigate to the project folder in the terminal.
+3. $npm i (this will install mongoose and express)
+4. $ npm start
+5. navigate to the endpoints listed below in Insomnia or Postman. (The How To Video will use Insomnia).
+
+## End-points
+
+GET all users, POST a new user:
+
+```
+/api/users
+```
+
+GET all thoughts:
+
+```
+/api/thoughts
+```
+
+POST a new user thought:
+
+```
+/api/thoughts/:userId
+```
+
+GET user by userId, PUT user by id, DELETE user by id
+
+```
+/api/users/:userId
+```
+
+GET thought by thoughtID, PUT a thought by id, DELETE a thought by id:
+
+```
+/api/thoughts/:thoughtId
+```
+
+POST a new friend to a user's friend list, DELETE a user from a friend's list:
+
+```
+/api/users/:userId/friends/:friendId
+```
+
+POST a reaction to thought:
+
+```
+/api/thoughts/:thoughtId/reactions
+```
+
+DELETE a reaction:
+
+```
+/api/thoughts/:thoughtId/reactions/:reactionId
+```
+
+## Contributing
+
+Currently all contributions made by [Hank Kapka](https://www.github.com/hkapk)
+
+Free to contribute to, check the issues tab on github to help
+
+## Tests
+
+There are not currently any test packages.
+
+## Questions
+
+Checkout https://www.github.com/hkapk on GitHub or send an email inquiry to hankkapka@gmail.com.
+
+```
+
+```
