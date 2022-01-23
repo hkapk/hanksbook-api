@@ -100,7 +100,9 @@ const thoughtController = {
 
   // add reaction to thought
   addReaction({ params, body }, res) {
-    Thought.findOneAndUpdate({ _id: params.thoughtId }, 
+    console.log(params, body);
+    Thought.findOneAndUpdate(
+      { _id: params.thoughtId }, 
       { $addToSet: { reactions: body } }, 
       { new: true, runValidators: true })
       .then(dbThoughtData => {
@@ -114,7 +116,7 @@ const thoughtController = {
   },
 
 
-  // remove reply
+  // remove reaction
   removeReaction({ params }, res) {
     Thought.findOneAndUpdate(
       { _id: params.thoughtId },
