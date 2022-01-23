@@ -30,8 +30,9 @@ router
 // /api/thoughts/<thoughtId/reactions>
 // reactions to a specific thought by id
 router.route('/:thoughtId/reactions')
-.get(getReactionById)
-.post(addReaction)
+.post(addReaction);
+
+router.route('/:thoughtId/reactions/:reactionId')
 .delete(removeReaction);
 
 // router.route('/:id/reactions/:id')
