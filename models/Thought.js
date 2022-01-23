@@ -49,14 +49,9 @@ const ThoughtSchema = new Schema (
         //username of who created the thought
         username: {
             type: String,
-            required: true
+            required: true,
+            trim: true
           },
-
-          userId: {
-            
-
-          },
-
           //use the reactions schema
           reactions: [ReactionSchema]
     },

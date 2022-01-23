@@ -21,4 +21,8 @@ router
   .put(updateUser)
   .delete(deleteUser);
 
+//add route for /:id/friends/:friendId
+router
+  .route("/:id/friends/:friendId")
+  //post & delete route here
 module.exports = router;
