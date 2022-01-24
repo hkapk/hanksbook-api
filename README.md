@@ -18,6 +18,22 @@ This is an API for a social network that uses a noSQL database, MongoDB. There a
 
 ## How-To
 
+How to add Users, Update Users and Delete Users:
+
+https://user-images.githubusercontent.com/90150749/150842746-6bc075a1-6ffa-41be-8be9-95a0a4ec0fd0.mp4
+
+How to add, update, delete Thoughts:
+
+https://user-images.githubusercontent.com/90150749/150843463-fa277047-389d-4d0b-a492-0a543c6b55bf.mp4
+
+How to Add/ Delete Friends:
+
+https://user-images.githubusercontent.com/90150749/150841615-ad04ed32-344c-4d2d-877d-17fb3b89b3e4.mp4
+
+Adding and Deleting Reactions to Thoughts:
+
+https://user-images.githubusercontent.com/90150749/150844888-70c4e29a-8ac1-4847-b706-8ec32bc17c9a.mp4
+
 ## Installation
 
 You will need to install MongoDB, ExpressJS, and Mongoose to use this API locally.
